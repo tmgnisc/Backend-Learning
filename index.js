@@ -2,6 +2,7 @@ import express from "express"
 import mongoose from "mongoose"
 import bodyParser from "body-parser"
 import dotenv from "dotenv"
+import route from "./routes/userRoute.js"
 
 const app = express()
 
@@ -16,3 +17,4 @@ mongoose.connect(MONGOURI).then(()=>{
     })
 }).catch((error)=>console.log(error))
 
+app.use("/api/user", route)

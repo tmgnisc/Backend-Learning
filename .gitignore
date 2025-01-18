@@ -1,0 +1,19 @@
+# Ignore .env files
+.env
+
+# Node.js modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Log files
+*.log
+
+# System files (macOS, Windows, etc.)
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore other sensitive files
+secret-files/
